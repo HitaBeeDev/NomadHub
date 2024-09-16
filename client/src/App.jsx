@@ -1,14 +1,14 @@
 import "./index.css";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import IndexPage from "./Pages/IndexPage";
 
 function App() {
   return (
-<Routes>
-  <Route index element={}
-</Routes>
+    <Routes>
+      <Route index element={<IndexPage />} />
 
-
-   
+      <Route />
+    </Routes>
   );
 }
 
