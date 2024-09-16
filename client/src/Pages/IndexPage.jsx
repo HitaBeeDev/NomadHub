@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function IndexPage() {
   return (
     <div>
@@ -11,6 +13,10 @@ function IndexPage() {
         <p>GUESTS</p>
 
         <p>SEARCH</p>
+
+        <Link to={"/login"}>
+          <p>login</p>
+        </Link>
       </header>
     </div>
   );
