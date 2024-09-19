@@ -6,16 +6,19 @@ function IndexPage() {
       <header className="p-5 flex flex-row justify-between items-center">
         <p className="font-medium text-xl">NomadHub</p>
 
-        <p>ANYWHERE</p>
+        <p>Home</p>
 
-        <p>WEEK</p>
+        <p>How it Works</p>
 
-        <p>GUESTS</p>
+        <p>Community</p>
 
-        <p>SEARCH</p>
+        <p>Blog</p>
+
+        <p>Help</p>
 
         <Link to={"/login"}>
-          <p>login</p>
+          <p>Sign In</p>
+          <p> Sign Up</p>
         </Link>
       </header>
     </div>
