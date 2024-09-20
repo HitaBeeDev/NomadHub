@@ -5,7 +5,9 @@ function LoginPage() {
     <div>
       <p>login page</p>
 
-      <Link className="bg-red-200 mt-5">Register Here</Link>
+      <Link to={"/register"} className="bg-red-200 mt-5">
+        Register Here
+      </Link>
     </div>
   );
 }
