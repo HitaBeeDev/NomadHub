@@ -2,10 +2,18 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div>
-      <header className="p-5 flex flex-row justify-between items-center">
-        <p className="font-medium text-xl">NomadHub</p>
+    <header className="flex flex-row justify-between items-center">
+      <p
+        className="font-semibold text-lg
+      font-mono tracking-widest leading-loose	"
+      >
+        NomadHub
+      </p>
 
+      <div
+        className="flex flex-row justify-center items-center
+      text-sm font-normal tracking-wider gap-7"
+      >
         <p>Home</p>
 
         <p>How it Works</p>
@@ -15,13 +23,16 @@ function Header() {
         <p>Blog</p>
 
         <p>Help</p>
+      </div>
 
-        <Link to={"/login"}>
-          <p>Sign In</p>
-          <p> Sign Up</p>
-        </Link>
-      </header>
-    </div>
+      <Link
+        className="flex flex-row justify-between items-center"
+        to={"/login"}
+      >
+        <p>Sign In</p>
+        <p> Sign Up</p>
+      </Link>
+    </header>
   );
 }
 
