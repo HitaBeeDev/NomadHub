@@ -7,11 +7,14 @@ import Layout from "./Layout";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />} />
+      {/* Main Layout with Header, Content and Footer */}
+      <Route path="/" element={<Layout />}>
+        {/* Index page */}
+        <Route index element={<IndexPage />} />
 
-      <Route index element={<IndexPage />} />
-
-      <Route path="/login" element={<LoginPage />} />
+        {/* Login page */}
+        <Route path="login" element={<LoginPage />} />
+      </Route>
     </Routes>
   );
 }
