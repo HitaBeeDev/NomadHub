@@ -2,9 +2,9 @@ import { useState } from "react";
 import backgroundVideo from "../assets/4.mp4";
 
 function RegisterPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
 
   return (
     <div className="grid grid-cols-2 gap-5 h-[80vh] mt-5">

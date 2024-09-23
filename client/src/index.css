@@ -25,3 +25,14 @@
   scrollbar-width: thin; /* Make scrollbar thinner */
   scrollbar-color: #f3f0f0 #e6e6e6; /* Thumb color and track color */
 }
+
+.navbar-items {
+  @apply cursor-pointer hover:bg-[#e7e7e7] transition-all duration-300
+         flex justify-center items-center rounded-3xl h-7 text-[0.8rem];
+}
+
+/* --soft-charcoal: #4B4B4B; 
+--cool-mint: #D8E3E7;     
+--powder-blue: #A7C4D8;   
+--soft-sand: #D9D4CB;    
+--muted-rose: #D48B91; */

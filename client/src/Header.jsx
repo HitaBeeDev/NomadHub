@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
+import "./index.css";
 
 function Header() {
   return (
     <header className="flex flex-row justify-between items-center">
-      <p
-        className="font-semibold text-xl
-      font-mono tracking-widest leading-loose"
+      <Link
+        to={"/"}
+        className="font-semibold text-2xl
+      font-mono tracking-widest leading-loose cursor-pointer"
       >
         NomadHub
-      </p>
+      </Link>
 
       <div
         className="flex flex-row justify-center items-center 
-      text-sm font-normal tracking-wider gap-10 bg-gray-200 p-3 pl-6 pr-6 rounded-2xl"
+    text-sm font-normal tracking-wider gap-3 h-9 bg-[#d1d1d1] p-2 rounded-3xl"
       >
-        <p className="cursor-pointer">Home</p>
-
-        <p className="cursor-pointer">How it Works</p>
-
-        <p className="cursor-pointer">Community</p>
-
-        <p className="cursor-pointer">Blog</p>
-
-        <p className="cursor-pointer">Help</p>
+        <p className="navbar-items w-16">Home</p>
+        <p className="navbar-items w-28">How it Works</p>
+        <p className="navbar-items w-24">Community</p>
+        <p className="navbar-items w-14">Blog</p>
+        <p className="navbar-items w-14">Help</p>
       </div>
 
       <div
@@ -31,16 +29,19 @@ function Header() {
       >
         <Link
           to={"/register"}
-          className="border border-gray-500 p-2 flex justify-center items-center
-        text-center rounded-3xl w-24 h-9"
+          className="border border-[#6d6d6d] p-2 flex justify-center items-center
+        text-center rounded-3xl w-20 h-8 text-[#6d6d6d] hover:border-none
+         hover:bg-[#888888] hover:text-[#f6f6f6] transition-all duration-500
+         text-[0.8rem]"
         >
           Sign Up
         </Link>
 
         <Link
           to={"/login"}
-          className="bg-gray-500 text-white p-2 flex justify-center items-center
-        text-center rounded-3xl w-24 h-9"
+          className="bg-[#888888] text-[#f6f6f6] hover:text-[#6d6d6d] p-2 flex justify-center items-center
+        text-center rounded-3xl w-20 h-8 hover:bg-transparent hover:border
+         hover:border-[#6d6d6d] transition-all duration-500 text-[0.8rem]"
         >
           Sign In
         </Link>
