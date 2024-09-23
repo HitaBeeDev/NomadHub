@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import BackgroundGif from "../Components/BackgroundGif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-regular-svg-icons";
+
 function LoginPage() {
   return (
     <div className="grid grid-cols-2 gap-5 h-[80vh] mt-6">
@@ -42,6 +45,8 @@ function LoginPage() {
               className="rounded-md h-9
             focus:outline-none p-3 text-[#495e84]"
             />
+
+            {/* <FontAwesomeIcon className="text-[#a7c4d8] w-4" icon={faEye} /> */}
           </div>
 
           <button
