@@ -7,33 +7,68 @@ function LoginPage() {
         <BackgroundGif />
       </div>
 
-      <div className="col-span-1 flex flex-col p-10 mx-auto">
-        <p className="text-3xl font-semibold font-mono leading-normal text-left">
-          Welcome back!
-        </p>
-        <p className="text-sm font-normal text-left">
-          Please enter your details.
-        </p>
+      <div className="flex justify-center items-center">
+        <div className="col-span-1 flex flex-col p-10 w-full max-w-md">
+          <p
+            className="text-3xl font-semibold font-mono leading-normal
+           text-left text-[#3e4f6a]"
+          >
+            Welcome back!
+          </p>
+          <p
+            className="text-sm font-normal text-left
+          text-[#293242]"
+          >
+            Please enter your details.
+          </p>
 
-        <div className="flex flex-col mt-8 gap-1 text-left">
-          <label className="text-sm font-normal">Email</label>
+          <div className="flex flex-col mt-10 gap-1 text-left">
+            <label className="text-sm font-normal text-[#3e4f6a]">Email</label>
 
-          <input type="email" className="rounded-md h-8" />
-        </div>
+            <input
+              type="email"
+              className="rounded-md h-9
+            focus:outline-none p-3 text-[#495e84]"
+            />
+          </div>
 
-        <div className="flex flex-col gap-1 mt-4 text-left">
-          <label className="text-sm font-normal">Password</label>
+          <div className="flex flex-col gap-1 mt-4 text-left">
+            <label className="text-sm font-normal text-[#3e4f6a]">
+              Password
+            </label>
 
-          <input type="password" className="rounded-md h-8" />
-        </div>
+            <input
+              type="password"
+              className="rounded-md h-9
+            focus:outline-none p-3 text-[#495e84]"
+            />
+          </div>
 
-        <button className="mt-4">Sign in</button>
+          <button
+            className="bg-[#7398be] text-[#f4f8fa]
+             p-2 flex justify-center items-center
+        text-center rounded-md h-9 
+          hover:bg-[#495e84] transition-all 
+         duration-500 text-sm mt-5"
+          >
+            Sign in
+          </button>
 
-        <div className="mt-4 text-left">
-          <p>Don't have an account?</p>
-          <Link to={"/register"} className="bg-red-200 mt-1">
-            Register Here
-          </Link>
+          <div
+            className="mt-2 text-left text-xs flex flex-row
+          items-center"
+          >
+            <p className="text-[#3e4f6a]">Don't have an account?</p>
+
+            <Link
+              to={"/register"}
+              className="ml-1
+        text-[#D48B91]
+            font-medium"
+            >
+              Register Here
+            </Link>
+          </div>
         </div>
       </div>
     </div>
