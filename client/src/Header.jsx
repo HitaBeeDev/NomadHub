@@ -14,7 +14,7 @@ function Header() {
 
       <div
         className="flex flex-row justify-center items-center 
-    text-sm font-normal tracking-wider gap-3 h-9 bg-[#d1d1d1] p-2 rounded-3xl"
+    text-sm font-normal tracking-wider gap-3 h-9 bg-[#d2e0eb] p-2 rounded-3xl"
       >
         <p className="navbar-items w-16">Home</p>
         <p className="navbar-items w-28">How it Works</p>
@@ -29,9 +29,9 @@ function Header() {
       >
         <Link
           to={"/register"}
-          className="border border-[#6d6d6d] p-2 flex justify-center items-center
-        text-center rounded-3xl w-20 h-8 text-[#6d6d6d] hover:border-none
-         hover:bg-[#888888] hover:text-[#f6f6f6] transition-all duration-500
+          className="border border-[#6083b0] p-2 flex justify-center items-center
+        text-center rounded-3xl w-20 h-8 text-[#6083b0] hover:border-none
+         hover:bg-[#7398be] hover:text-[#f4f8fa] transition-all duration-500
          text-[0.8rem]"
         >
           Sign Up
@@ -39,9 +39,9 @@ function Header() {
 
         <Link
           to={"/login"}
-          className="bg-[#888888] text-[#f6f6f6] hover:text-[#6d6d6d] p-2 flex justify-center items-center
+          className="bg-[#7398be] text-[#f4f8fa] hover:text-[#6083b0] p-2 flex justify-center items-center
         text-center rounded-3xl w-20 h-8 hover:bg-transparent hover:border
-         hover:border-[#6d6d6d] transition-all duration-500 text-[0.8rem]"
+         hover:border-[#6083b0] transition-all duration-500 text-[0.8rem]"
         >
           Sign In
         </Link>

@@ -4,7 +4,7 @@ import Header from "./Header";
 function Layout() {
   return (
     <div
-      className="bg-[#e7e7e7] border border-[#f6f6f6] rounded-2xl
+      className="bg-[#e5edf4] border border-[#f6f6f6] rounded-2xl
     m-5 p-5 shadow-lg pl-8 pr-8"
     >
       <Header />

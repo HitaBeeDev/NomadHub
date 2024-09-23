@@ -27,8 +27,9 @@
 }
 
 .navbar-items {
-  @apply cursor-pointer hover:bg-[#e7e7e7] transition-all duration-300
-         flex justify-center items-center rounded-3xl h-7 text-[0.8rem];
+  @apply cursor-pointer hover:bg-[#f4f8fa] transition-all duration-300
+         flex justify-center items-center rounded-3xl h-7 text-[0.8rem]
+         text-[#293242];
 }
 
 /* --soft-charcoal: #4B4B4B; 
