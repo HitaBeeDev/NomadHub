@@ -68,8 +68,8 @@ function LoginPage() {
             <Link
               to={"/register"}
               className="ml-1
-        text-[#D48B91]
-            font-medium"
+        text-[#D48B91] hover:text-[#af4f5e]
+            font-medium transition-all duration-300"
             >
               Register Here
             </Link>
